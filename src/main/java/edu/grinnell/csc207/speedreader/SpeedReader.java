@@ -3,9 +3,9 @@
  */
 
 package edu.grinnell.csc207.speedreader;
+
 import java.awt.*;
 import java.io.IOException;
-
 
 /**
  *
@@ -38,6 +38,18 @@ public class SpeedReader {
             g.drawString(word, width / 2 - g.getFontMetrics().stringWidth(word) / 2, height / 2);
             Thread.sleep(delay);
         }
+
+        // Printing no. of words and sentences in console and drawing panel.
+
+        Thread.sleep(3000);
+        panel.clear();
+        String word = String.valueOf(generator.getWordCount());
+        g.drawString("words: " + word, width / 2 - g.getFontMetrics().stringWidth(word) / 2, height / 2);
+        Thread.sleep(3000);
+        panel.clear();
+        word = String.valueOf(generator.getSentenceCount());
+        g.drawString("sentences: " + word, width / 2 - g.getFontMetrics().stringWidth(word) / 2,
+                height / 2);
 
         System.out.println("Words processed: " + generator.getWordCount());
         System.out.println("Sentences processed: " + generator.getSentenceCount());

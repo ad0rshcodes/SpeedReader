@@ -5,10 +5,12 @@
     <artifactId>SpeedReader</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
-        <exec.mainClass>edu.grinnell.csc207.speedreader.speedreader.SpeedReader</exec.mainClass>
+        <exec.mainClass>edu.grinnell.csc207.speedreader.SpeedReader</exec.mainClass>
     </properties>
 </project>
